@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B89DF9D0194699F200B8EB6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89DF9CF194699F200B8EB6C /* Foundation.framework */; };
+		B89DF9D5194699F200B8EB6C /* SallyCocoa.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B89DF9D4194699F200B8EB6C /* SallyCocoa.h */; };
+		B89DF9D7194699F200B8EB6C /* SallyCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = B89DF9D6194699F200B8EB6C /* SallyCocoa.m */; };
+		B89DF9DE194699F200B8EB6C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89DF9DD194699F200B8EB6C /* XCTest.framework */; };
+		B89DF9DF194699F200B8EB6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89DF9CF194699F200B8EB6C /* Foundation.framework */; };
+		B89DF9E1194699F200B8EB6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89DF9E0194699F200B8EB6C /* UIKit.framework */; };
+		B89DF9E4194699F200B8EB6C /* libSallyCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B89DF9CC194699F200B8EB6C /* libSallyCocoa.a */; };
+		B89DF9EA194699F200B8EB6C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B89DF9E8194699F200B8EB6C /* InfoPlist.strings */; };
+		B89DF9EC194699F200B8EB6C /* SallyCocoaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B89DF9EB194699F200B8EB6C /* SallyCocoaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B89DF9E2194699F200B8EB6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B89DF9C4194699F200B8EB6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B89DF9CB194699F200B8EB6C;
+			remoteInfo = SallyCocoa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B89DF9CA194699F200B8EB6C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				B89DF9D5194699F200B8EB6C /* SallyCocoa.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B89DF9CC194699F200B8EB6C /* libSallyCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSallyCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B89DF9CF194699F200B8EB6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B89DF9D3194699F200B8EB6C /* SallyCocoa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SallyCocoa-Prefix.pch"; sourceTree = "<group>"; };
+		B89DF9D4194699F200B8EB6C /* SallyCocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SallyCocoa.h; sourceTree = "<group>"; };
+		B89DF9D6194699F200B8EB6C /* SallyCocoa.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SallyCocoa.m; sourceTree = "<group>"; };
+		B89DF9DC194699F200B8EB6C /* SallyCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SallyCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B89DF9DD194699F200B8EB6C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B89DF9E0194699F200B8EB6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B89DF9E7194699F200B8EB6C /* SallyCocoaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SallyCocoaTests-Info.plist"; sourceTree = "<group>"; };
+		B89DF9E9194699F200B8EB6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B89DF9EB194699F200B8EB6C /* SallyCocoaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SallyCocoaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B89DF9C9194699F200B8EB6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89DF9D0194699F200B8EB6C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B89DF9D9194699F200B8EB6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89DF9DE194699F200B8EB6C /* XCTest.framework in Frameworks */,
+				B89DF9E1194699F200B8EB6C /* UIKit.framework in Frameworks */,
+				B89DF9DF194699F200B8EB6C /* Foundation.framework in Frameworks */,
+				B89DF9E4194699F200B8EB6C /* libSallyCocoa.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B89DF9C3194699F200B8EB6C = {
+			isa = PBXGroup;
+			children = (
+				B89DF9D1194699F200B8EB6C /* SallyCocoa */,
+				B89DF9E5194699F200B8EB6C /* SallyCocoaTests */,
+				B89DF9CE194699F200B8EB6C /* Frameworks */,
+				B89DF9CD194699F200B8EB6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B89DF9CD194699F200B8EB6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B89DF9CC194699F200B8EB6C /* libSallyCocoa.a */,
+				B89DF9DC194699F200B8EB6C /* SallyCocoaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B89DF9CE194699F200B8EB6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B89DF9CF194699F200B8EB6C /* Foundation.framework */,
+				B89DF9DD194699F200B8EB6C /* XCTest.framework */,
+				B89DF9E0194699F200B8EB6C /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B89DF9D1194699F200B8EB6C /* SallyCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				B89DF9D4194699F200B8EB6C /* SallyCocoa.h */,
+				B89DF9D6194699F200B8EB6C /* SallyCocoa.m */,
+				B89DF9D2194699F200B8EB6C /* Supporting Files */,
+			);
+			path = SallyCocoa;
+			sourceTree = "<group>";
+		};
+		B89DF9D2194699F200B8EB6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B89DF9D3194699F200B8EB6C /* SallyCocoa-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B89DF9E5194699F200B8EB6C /* SallyCocoaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B89DF9EB194699F200B8EB6C /* SallyCocoaTests.m */,
+				B89DF9E6194699F200B8EB6C /* Supporting Files */,
+			);
+			path = SallyCocoaTests;
+			sourceTree = "<group>";
+		};
+		B89DF9E6194699F200B8EB6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B89DF9E7194699F200B8EB6C /* SallyCocoaTests-Info.plist */,
+				B89DF9E8194699F200B8EB6C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B89DF9CB194699F200B8EB6C /* SallyCocoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B89DF9EF194699F200B8EB6C /* Build configuration list for PBXNativeTarget "SallyCocoa" */;
+			buildPhases = (
+				B89DF9C8194699F200B8EB6C /* Sources */,
+				B89DF9C9194699F200B8EB6C /* Frameworks */,
+				B89DF9CA194699F200B8EB6C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SallyCocoa;
+			productName = SallyCocoa;
+			productReference = B89DF9CC194699F200B8EB6C /* libSallyCocoa.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B89DF9DB194699F200B8EB6C /* SallyCocoaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B89DF9F2194699F200B8EB6C /* Build configuration list for PBXNativeTarget "SallyCocoaTests" */;
+			buildPhases = (
+				B89DF9D8194699F200B8EB6C /* Sources */,
+				B89DF9D9194699F200B8EB6C /* Frameworks */,
+				B89DF9DA194699F200B8EB6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B89DF9E3194699F200B8EB6C /* PBXTargetDependency */,
+			);
+			name = SallyCocoaTests;
+			productName = SallyCocoaTests;
+			productReference = B89DF9DC194699F200B8EB6C /* SallyCocoaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B89DF9C4194699F200B8EB6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Tokenize;
+			};
+			buildConfigurationList = B89DF9C7194699F200B8EB6C /* Build configuration list for PBXProject "SallyCocoa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B89DF9C3194699F200B8EB6C;
+			productRefGroup = B89DF9CD194699F200B8EB6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B89DF9CB194699F200B8EB6C /* SallyCocoa */,
+				B89DF9DB194699F200B8EB6C /* SallyCocoaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B89DF9DA194699F200B8EB6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89DF9EA194699F200B8EB6C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B89DF9C8194699F200B8EB6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89DF9D7194699F200B8EB6C /* SallyCocoa.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B89DF9D8194699F200B8EB6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89DF9EC194699F200B8EB6C /* SallyCocoaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B89DF9E3194699F200B8EB6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B89DF9CB194699F200B8EB6C /* SallyCocoa */;
+			targetProxy = B89DF9E2194699F200B8EB6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B89DF9E8194699F200B8EB6C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B89DF9E9194699F200B8EB6C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B89DF9ED194699F200B8EB6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B89DF9EE194699F200B8EB6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B89DF9F0194699F200B8EB6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SallyCocoa.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SallyCocoa/SallyCocoa-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B89DF9F1194699F200B8EB6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SallyCocoa.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SallyCocoa/SallyCocoa-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B89DF9F3194699F200B8EB6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SallyCocoa/SallyCocoa-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SallyCocoaTests/SallyCocoaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B89DF9F4194699F200B8EB6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SallyCocoa/SallyCocoa-Prefix.pch";
+				INFOPLIST_FILE = "SallyCocoaTests/SallyCocoaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B89DF9C7194699F200B8EB6C /* Build configuration list for PBXProject "SallyCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B89DF9ED194699F200B8EB6C /* Debug */,
+				B89DF9EE194699F200B8EB6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B89DF9EF194699F200B8EB6C /* Build configuration list for PBXNativeTarget "SallyCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B89DF9F0194699F200B8EB6C /* Debug */,
+				B89DF9F1194699F200B8EB6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B89DF9F2194699F200B8EB6C /* Build configuration list for PBXNativeTarget "SallyCocoaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B89DF9F3194699F200B8EB6C /* Debug */,
+				B89DF9F4194699F200B8EB6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B89DF9C4194699F200B8EB6C /* Project object */;
+}
