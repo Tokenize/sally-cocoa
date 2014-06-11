@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.summary      = "A Cocoa client for Sally API."
 
   s.description  = <<-DESC
-                   A Cocoa client for Sally API.
+                   A Cocoa client library for Sally API.
                    DESC
 
   s.homepage     = "https://github.com/Tokenize/sally-cocoa"
