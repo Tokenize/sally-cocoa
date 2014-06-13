@@ -1,4 +1,4 @@
-# SallyCocoa [![Build Status](https://travis-ci.org/Tokenize/sally-api.png)](https://travis-ci.org/Tokenize/sally-api)
+# SallyCocoa [![Build Status](https://travis-ci.org/Tokenize/sally-cocoa.png)](https://travis-ci.org/Tokenize/sally-cocoa)
 
 A Cocoa client for Sally API.
 
@@ -9,6 +9,7 @@ The recommended approach is to use CocoaPods and adding the following to your Po
   pod "SallyCocoa", git: 'https://github.com/Tokenize/sally-cocoa.git'
 
 Then install the pod by running:
+
   $ pod install
 
 ## Contributing
