@@ -6,11 +6,11 @@ A Cocoa client for Sally API.
 
 The recommended approach is to use CocoaPods and adding the following to your Podfile:
 
-  pod "SallyCocoa", git: 'https://github.com/Tokenize/sally-cocoa.git'
+    pod "SallyCocoa", git: 'https://github.com/Tokenize/sally-cocoa.git'
 
 Then install the pod by running:
 
-  $ pod install
+    $ pod install
 
 ## Contributing
 
