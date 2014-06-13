@@ -1,3 +1,4 @@
+rvm: 1.9.3
 language: objective-c
 xcode_workspace: SallyCocoa.xcworkspace
 xcode_scheme: SallyCocoaTests
