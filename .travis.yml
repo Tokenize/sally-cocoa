@@ -1,5 +1,5 @@
 before_install:
-  - gem install cocoapods -v '0.32.1'
+  - gem install cocoapods -v '0.33.1'
 
 before_script:
   - export LANG=en_US.UTF-8
@@ -8,4 +8,4 @@ language: objective-c
 xcode_workspace: SallyCocoa.xcworkspace
 xcode_scheme: SallyCocoaTests
 xcode_sdk: iphonesimulator7.1
-script: xctool -workspace SallyCocoa.xcworkspace -scheme SallyCocoaTests -sdk iphonesimulator7.1 -destination "name=iPhone Retina (4-inch 64-bit)" build test
+script: xctool -workspace SallyCocoa.xcworkspace -scheme SallyCocoaTests -sdk iphonesimulator7.1 -destination 'name=iPhone Retina (4-inch 64-bit)' build test
