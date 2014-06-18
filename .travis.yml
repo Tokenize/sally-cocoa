@@ -3,6 +3,9 @@ before_install:
 
 before_script:
   - export LANG=en_US.UTF-8
+  - brew unlink xctool
+  - brew update
+  - brew install xctool
 
 language: objective-c
 xcode_workspace: SallyCocoa.xcworkspace
