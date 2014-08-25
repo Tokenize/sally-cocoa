@@ -52,6 +52,9 @@ enum {
 @property (nonatomic) SallyCommunicator *communicator;
 @property (nonatomic) User *user;
 
+#pragma mark - Authentication Methods
+- (void)signInWithEmail:(NSString *)email password:(NSString *)password;
+
 #pragma mark - Trip Methods
 
 - (void)fetchTrips;

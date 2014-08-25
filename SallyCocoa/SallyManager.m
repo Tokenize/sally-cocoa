@@ -47,17 +47,9 @@ NSString *SallyManagerErrors = @"SallyManagerError";
 
 #pragma mark - Authentication Methods
 
-- (void)sallyCommunicator:(SallyCommunicator *)communicator didSignInWithToken:(NSString *)token
+- (void)signInWithEmail:(NSString *)email password:(NSString *)password
 {
-    [self.delegate sallyManager: self didSignInWithToken: token];
-}
-
-- (void)sallyCommunicator:(SallyCommunicator *)communicator signInFailedWithError:(NSError *)error
-{
-    NSDictionary *errorInfo = [NSDictionary dictionaryWithObject: error forKey: NSUnderlyingErrorKey];
-    NSError *reportableError = [NSError errorWithDomain: SallyManagerErrors code: SallyManagerErrorSignIn userInfo: errorInfo];
-
-    [self.delegate sallyManager: self signInFailedWithError: reportableError];
+    [communicator signInWithEmail: email password: password];
 }
 
 #pragma mark - Trip Methods
@@ -75,6 +67,19 @@ NSString *SallyManagerErrors = @"SallyManagerError";
 }
 
 #pragma mark -
+
+- (void)sallyCommunicator:(SallyCommunicator *)communicator didSignInWithToken:(NSString *)token
+{
+    [self.delegate sallyManager: self didSignInWithToken: token];
+}
+
+- (void)sallyCommunicator:(SallyCommunicator *)communicator signInFailedWithError:(NSError *)error
+{
+    NSDictionary *errorInfo = [NSDictionary dictionaryWithObject: error forKey: NSUnderlyingErrorKey];
+    NSError *reportableError = [NSError errorWithDomain: SallyManagerErrors code: SallyManagerErrorSignIn userInfo: errorInfo];
+
+    [self.delegate sallyManager: self signInFailedWithError: reportableError];
+}
 
 - (void)sallyCommunicator:(SallyCommunicator *)communicator didFetchTrips:(NSArray *)trips
 {

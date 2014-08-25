@@ -8,6 +8,7 @@
 
 #import "SallyManager.h"
 #import "MockSallyManagerDelegate.h"
+#import "MockSallyCommunicator.h"
 
 #import "Specta.h"
 #define EXP_SHORTHAND
@@ -36,6 +37,18 @@ describe(@"AuthenticationWorkflowSpec", ^{
 
     describe(@"sign in", ^{
         context(@"success", ^{
+            it(@"should ask the communicator to sign in", ^{
+                MockSallyCommunicator *communicator = [[MockSallyCommunicator alloc] init];
+
+                manager.communicator = communicator;
+                [manager signInWithEmail: @"foo" password: @"bar"];
+
+                expect(communicator.wasAskedToSignIn).to.equal(true);
+
+                manager.communicator = nil;
+                communicator = nil;
+            });
+
             it(@"should pass the authentication token to the delegate", ^{
                 [manager sallyCommunicator: nil didSignInWithToken: @"api_token"];
 

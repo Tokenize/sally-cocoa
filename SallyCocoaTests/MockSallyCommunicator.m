@@ -10,8 +10,14 @@
 
 @implementation MockSallyCommunicator
 
+@synthesize wasAskedToSignIn;
 @synthesize wasAskedToFetchTrips;
 @synthesize wasAskedToFetchLocations;
+
+- (void)signInWithEmail:(NSString *)email password:(NSString *)password
+{
+    wasAskedToSignIn = true;
+}
 
 - (void)fetchTrips
 {

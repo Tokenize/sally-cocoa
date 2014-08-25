@@ -11,6 +11,7 @@
 
 @interface MockSallyCommunicator : SallyCommunicator
 
+@property (readonly) BOOL wasAskedToSignIn;
 @property (readonly) BOOL wasAskedToFetchTrips;
 @property (readonly) BOOL wasAskedToFetchLocations;
 
