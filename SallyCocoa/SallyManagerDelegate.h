@@ -27,6 +27,7 @@
 @class SallyManager;
 
 @protocol SallyManagerDelegate <NSObject>
+@optional
 
 - (void)sallyManager:(SallyManager *)manager didSignInWithToken:(NSString *)token;
 - (void)sallyManager:(SallyManager *)manager signInFailedWithError:(NSError *)error;
