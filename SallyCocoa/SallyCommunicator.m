@@ -54,8 +54,6 @@
 - (void)signInWithEmail:(NSString *)email password:(NSString *)password {
     NSMutableDictionary *temporaryParams = [[NSMutableDictionary alloc] initWithDictionary: @{@"email": [email copy], @"password": [password copy]}];
     
-    [temporaryParams addEntriesFromDictionary: parameters];
-    
     [self GET: @"users/sign_in" parameters:temporaryParams success:^(NSURLSessionDataTask *task, id responseObject) {
         [self.delegate sallyCommunicator: self didSignInWithToken: responseObject];
         
