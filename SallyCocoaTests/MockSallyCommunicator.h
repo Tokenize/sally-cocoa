@@ -14,5 +14,6 @@
 @property (readonly) BOOL wasAskedToSignIn;
 @property (readonly) BOOL wasAskedToFetchTrips;
 @property (readonly) BOOL wasAskedToFetchLocations;
+@property (readonly) BOOL wasAskedToCreateLocation;
 
 @end

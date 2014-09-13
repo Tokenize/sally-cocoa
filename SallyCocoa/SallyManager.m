@@ -66,6 +66,20 @@ NSString *SallyManagerErrors = @"SallyManagerError";
     [self.communicator createTrip: tripParameters];
 }
 
+#pragma mark - Location Methods
+
+- (void)createLocation:(Location *)location
+{
+    NSDictionary *locationParameters = [MTLJSONAdapter JSONDictionaryFromModel: location];
+
+    [self.communicator createLocationForTrip: locationParameters];
+}
+
+- (void)fetchLocationsForTrip:(NSUInteger)tripID
+{
+    [communicator fetchLocationsForTrip: tripID];
+}
+
 #pragma mark -
 
 - (void)sallyCommunicator:(SallyCommunicator *)communicator didSignInWithToken:(NSString *)token
@@ -178,11 +192,6 @@ NSString *SallyManagerErrors = @"SallyManagerError";
     if ([self.delegate respondsToSelector:@selector(sallyManager:createLocationFailedWithError:)]) {
         [self.delegate sallyManager: self createLocationFailedWithError: reportableError];
     }
-}
-
-- (void)fetchLocationsForTrip:(NSUInteger)tripID
-{
-    [communicator fetchLocationsForTrip: tripID];
 }
 
 - (void)sallyCommunicator:(SallyCommunicator *)communicator didFetchLocationsForTrip:(NSArray *)locations

@@ -122,6 +122,21 @@ describe(@"LocationWorkflowSpec", ^{
                 locationJSON = nil;
             });
 
+            it(@"should ask the communicator to create location", ^{
+                MockSallyCommunicator *communicator = [[MockSallyCommunicator alloc] init];
+
+                manager.communicator = communicator;
+
+                Location *location = [[Location alloc] initWithDictionary: @{@"locationId": @6, @"tripId": @2, @"time": [NSDate distantPast], @"latitude": @123456789, @"longitude": @123456785, @"travelDirection": @"North", @"travelSpeed": @42} error: nil];
+
+                [manager createLocation: location];
+
+                expect(communicator.wasAskedToCreateLocation).to.beTruthy();
+
+                communicator = nil;
+                location = nil;
+            });
+
             it(@"should pass the created location to the delegate", ^{
                 [manager sallyCommunicator: nil didCreateLocation: locationJSON];
 

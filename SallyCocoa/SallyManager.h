@@ -28,6 +28,7 @@
 // Forward Declarations (Classes)
 @class SallyCommunicator;
 @class Trip;
+@class Location;
 @class User;
 
 @interface SallyManager : NSObject <SallyCommunicatorDelegate>
@@ -63,5 +64,6 @@ enum {
 #pragma mark - Location Methods
 
 - (void)fetchLocationsForTrip:(NSUInteger)tripID;
+- (void)createLocation:(Location *)location;
 
 @end

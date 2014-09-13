@@ -13,6 +13,7 @@
 @synthesize wasAskedToSignIn;
 @synthesize wasAskedToFetchTrips;
 @synthesize wasAskedToFetchLocations;
+@synthesize wasAskedToCreateLocation;
 
 - (void)signInWithEmail:(NSString *)email password:(NSString *)password
 {
@@ -27,6 +28,11 @@
 - (void)fetchLocationsForTrip:(NSUInteger)tripID
 {
     wasAskedToFetchLocations = true;
+}
+
+- (void)createLocationForTrip:(NSDictionary *)locationAttributes
+{
+    wasAskedToCreateLocation = true;
 }
 
 @end
