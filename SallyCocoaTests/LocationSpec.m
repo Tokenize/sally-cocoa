@@ -36,7 +36,7 @@ describe(@"LocationSpec", ^{
             __block Location *filledLocation;
 
             beforeEach(^{
-                filledLocation = [[Location alloc] initWithDictionary: @{@"locationId": @6, @"tripId": @2, @"time": [NSDate distantPast], @"latitude": @123456789, @"longitude": @123456785, @"travelDirection": @"North", @"travelSpeed": @42} error: nil];
+                filledLocation = [[Location alloc] initWithDictionary: @{@"locationId": @6, @"tripId": @2, @"time": [[NSDate distantPast] description], @"latitude": @123456789, @"longitude": @123456785, @"travelDirection": @"North", @"travelSpeed": @42} error: nil];
             });
 
             afterEach(^{
