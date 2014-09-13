@@ -106,25 +106,6 @@ NSString * const TripErrorDomain = @"TripErrorDomain";
     return NO;
 }
 
-#pragma mark -
-
-- (id)initWithName:(NSString *)aName description:(NSString *)aDescription startAt:(NSDate *)start endDate:(NSDate *)end
-{
-    if (aName == nil || start == nil) {
-        return nil;
-    }
-    
-    if (self = [super init]) {
-        name = [aName copy];
-        startAt = [start copy];
-        description = [aDescription copy];
-        endAt = [end copy];
-        locationsList = [[NSMutableArray alloc] init];
-    }
-    
-    return self;
-}
-
 - (void)addLocation:(Location *)newLocation
 {
     [locationsList addObject: newLocation];
