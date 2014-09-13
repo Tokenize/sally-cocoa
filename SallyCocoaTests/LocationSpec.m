@@ -36,11 +36,15 @@ describe(@"LocationSpec", ^{
             __block Location *filledLocation;
 
             beforeEach(^{
-                filledLocation = [[Location alloc] initWithDictionary: @{@"locationId": @6, @"time": [NSDate distantPast], @"latitude": @123456789, @"longitude": @123456785, @"travelDirection": @"North", @"travelSpeed": @42} error: nil];
+                filledLocation = [[Location alloc] initWithDictionary: @{@"locationId": @6, @"tripId": @2, @"time": [NSDate distantPast], @"latitude": @123456789, @"longitude": @123456785, @"travelDirection": @"North", @"travelSpeed": @42} error: nil];
             });
 
             afterEach(^{
                 filledLocation = nil;
+            });
+
+            it(@"should have the correct 'tripId'", ^{
+                expect(filledLocation.tripId).to.equal(2);
             });
 
             it(@"should have the correct 'locationId'", ^{

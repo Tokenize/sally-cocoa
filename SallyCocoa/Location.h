@@ -24,6 +24,7 @@
 
 @interface Location : MTLModel <MTLJSONSerializing>
 
+@property (nonatomic) NSUInteger tripId;
 @property (nonatomic) NSUInteger locationId;
 @property (nonatomic) NSDate *time;
 @property (nonatomic) NSString *travelDirection;

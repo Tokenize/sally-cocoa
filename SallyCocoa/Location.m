@@ -32,6 +32,7 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{@"locationId": @"id",
+             @"tripId": @"trip_id",
              @"time": @"time",
              @"travelDirection": @"direction",
              @"latitude": @"latitude",
